@@ -24,15 +24,15 @@ const Hero = ({ theme }) => {
             />
           </div>
           <div className="space-y-5 order-2 sm:order-1 sm:pr-32 ">
-            <p data-aos="fade-up" className="text-primary text-2xl font-serif">
-              Effortless
+            <p data-aos="fade-up" className="text-primary text-3xl font-serif font-bold">
+            श्री राम
             </p>
             <h1
               data-aos="fade-up"
               data-aos-delay="600"
               className="text-5xl lg:text-7xl font-semibold font-serif"
             >
-              Car Rental
+              Tour & Travels 
             </h1>
             <p data-aos="fade-up" data-aos-delay="1000">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
