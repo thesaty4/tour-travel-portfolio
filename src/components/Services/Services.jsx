@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCameraRetro } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
@@ -10,7 +9,7 @@ const skillsData = [
       <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Unbeatable prices, exceptional value, your budget-friendly choice for travel!",
     aosDelay: "0",
   },
   {
@@ -19,7 +18,7 @@ const skillsData = [
       <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Quick and secure: Your safest and speediest travel solution!",
     aosDelay: "500",
   },
   {
@@ -28,7 +27,7 @@ const skillsData = [
       <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description: "Skilled drivers, ensuring your journey is safe and enjoyable.",
     aosDelay: "1000",
   },
 ];
@@ -61,7 +60,7 @@ const Services = () => {
                   href={skill.link}
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
                 >
-                  Learn more
+                 Book Now
                 </a>
               </div>
             ))}

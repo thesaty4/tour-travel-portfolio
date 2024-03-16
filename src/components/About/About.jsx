@@ -1,5 +1,5 @@
-import React from "react";
-import CarPng from "../../assets/car1.png";
+ 
+import bmw from "../../assets/bmw1.png";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">
             <img
-              src={CarPng}
+              src={bmw}
               alt=""
               className="sm:scale-125 sm:-translate-x-11 max-h-[300px] drop-shadow-[2px_10px_6px_rgba(0,0,0,0.50)]"
             />
@@ -22,15 +22,16 @@ const About = () => {
                 About us
               </h1>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, magnam! Tenetur odio quo et maxime?
+              Welcome to our world of adventure!  
               </p>
               <p data-aos="fade-up">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
-                tempora.
+                We're passionate travelers just like you. 
+                Our mission is simple: to make your travel dreams come true. 
+                With us, you'll explore fascinating destinations, meet friendly locals, and create unforgettable memories. 
+                Let's embark on a journey together – your adventure starts here!
               </p>
               <button data-aos="fade-up" className="button-outline">
-                Get Started
+                Get Started Journey
               </button>
             </div>
           </div>
