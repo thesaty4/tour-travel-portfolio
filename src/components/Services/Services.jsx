@@ -22,12 +22,12 @@ const skillsData = [
     aosDelay: "500",
   },
   {
-    name: "Experience Drivers",
+    name: "24x7 Availability",
     icon: (
       <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
     ),
     link: "#",
-    description: "Skilled drivers, ensuring your journey is safe and enjoyable.",
+    description: "We are available 24hrs, you can connect with us anytime.",
     aosDelay: "1000",
   },
 ];

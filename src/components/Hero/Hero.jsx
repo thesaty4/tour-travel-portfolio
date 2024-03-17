@@ -1,6 +1,8 @@
-import { useEffect } from "react"; 
-import bmw2 from "../../assets/bmw2.png"; 
+import { useEffect } from "react";
+import bmw2 from "../../assets/bmw2.png";
+import whatsapp from "../../assets/icons/whatsapp.png";
 import AOS from "aos";
+import { heroPageConfig } from "../constants/pages.const";
 
 // eslint-disable-next-line react/prop-types
 const Hero = ( ) => {
@@ -25,28 +27,35 @@ const Hero = ( ) => {
           </div>
           <div className="space-y-5 order-2 sm:order-1 sm:pr-32 ">
             <p data-aos="fade-up" className="text-primary text-3xl font-serif font-bold">
-            श्री राम
+            {heroPageConfig.heading.text}
             </p>
             <h1
               data-aos="fade-up"
               data-aos-delay="600"
               className="text-5xl lg:text-7xl font-semibold font-serif"
-            >
-              Tour & Travels 
+            > 
+              {heroPageConfig.heading.subText}
             </h1>
             <p data-aos="fade-up" data-aos-delay="1000">
-            Discover amazing places with our tours. We make trips just for you. 
-            See beautiful landscapes and learn about different cultures. 
-            Our tours are fun and relaxing. Join us for your next adventure! </p>
+            {heroPageConfig.description}</p>
+            <p data-aos="fade-up" data-aos-delay="1000" className="flex flex-row text-[12px] gap-[10px]">
+              <span className="flex items-center"><img
+                src={whatsapp}
+                className="w-[30px] h-[30px]"
+              /></span>
+              <span> 
+                {heroPageConfig.contact?.mobile?.map((contact)=><p>{contact}</p>)}
+              </span>
+            </p>
             <button
               data-aos="fade-up"
               data-aos-delay="1500"
               onClick={() => {
                 AOS.refreshHard();
               }}
-              className="rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-6 text-black"
+              className="rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-10 text-black"
             >
-              Book Now
+              {heroPageConfig.cta.label}
             </button>
           </div>
         </div>

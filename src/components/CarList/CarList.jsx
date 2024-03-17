@@ -2,6 +2,7 @@ import React from "react";
 import whiteCar from "../../assets/white-car.png";
 import car2 from "../../assets/car5.png";
 import car3 from "../../assets/car6.png";
+import { carListConfig } from "../constants/pages.const";
 
 const carList = [
   {
@@ -33,11 +34,10 @@ const CarList = () => {
           data-aos="fade-up"
           className="text-3xl sm:text-4xl font-semibold font-serif mb-3"
         >
-          Lorem ipsum dolor
+          {carListConfig.heading.text}
         </h1>
         <p data-aos="fade-up" aos-delay="400" className="text-sm pb-10">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor iure
-          nemo ab?
+        {carListConfig.heading.subText}
         </p>
         {/* Car listing */}
         <div>

@@ -1,5 +1,6 @@
  
 import bmw from "../../assets/bmw1.png";
+import { aboutConfig } from "../constants/pages.const";
 
 const About = () => {
   return (
@@ -19,19 +20,17 @@ const About = () => {
                 data-aos="fade-up"
                 className="text-3xl sm:text-4xl font-bold font-serif"
               >
-                About us
+                {aboutConfig.heading.text}
               </h1>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
-              Welcome to our world of adventure!  
+              {aboutConfig.heading.subText}
               </p>
-              <p data-aos="fade-up">
-                We're passionate travelers just like you. 
-                Our mission is simple: to make your travel dreams come true. 
-                With us, you'll explore fascinating destinations, meet friendly locals, and create unforgettable memories. 
-                Let's embark on a journey together – your adventure starts here!
-              </p>
+              {aboutConfig.description.map((item)=> <p data-aos="fade-up">
+                {item}
+              </p>)}
+             
               <button data-aos="fade-up" className="button-outline">
-                Get Started Journey
+                {aboutConfig.cta.label}
               </button>
             </div>
           </div>
