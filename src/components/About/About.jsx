@@ -1,6 +1,6 @@
- 
-import bmw from "../../assets/bmw1.png";
-import { aboutConfig } from "../constants/pages.const";
+import bmw from '../../assets/bmw1.png';
+import { aboutConfig } from '../constants/pages.const';
+import Tracker from '../shared/Tracker';
 
 const About = () => {
   return (
@@ -23,12 +23,20 @@ const About = () => {
                 {aboutConfig.heading.text}
               </h1>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
-              {aboutConfig.heading.subText}
+                {aboutConfig.heading.subText}
               </p>
-              {aboutConfig.description.map((item)=> <p data-aos="fade-up">
-                {item}
-              </p>)}
-             
+              {aboutConfig.description.map((item, aKey) => (
+                <p key={aKey} data-aos="fade-up">
+                  {item}
+                </p>
+              ))}
+              <Tracker
+                tracks={aboutConfig.tracker}
+                label={'WE ALSO PROVIDE'}
+                trackClass="bg-[green] w-5 h-5"
+                labelClass="mt-[0px]"
+              />
+
               <button data-aos="fade-up" className="button-outline">
                 {aboutConfig.cta.label}
               </button>

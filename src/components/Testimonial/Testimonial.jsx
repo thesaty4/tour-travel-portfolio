@@ -1,25 +1,22 @@
-import React from "react";
+import React from 'react';
+
+import VishalOwner from '../../assets/owner/vishal-cropped.jpg';
 
 const testimonialData = [
   {
-    name: "Dilshad",
-    image: "",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    aosDelay: "0",
-  },
-  {
-    name: "Satya",
-    image: "",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    aosDelay: "300",
-  },
-  {
-    name: "Sabir",
-    image: "",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    aosDelay: "1000",
+    name: 'Vishal Maurya',
+    subtext: '- Owner',
+    image: VishalOwner,
+    description: `I am trying to provide the best services to my customers. I am always available for them. If you have any concern regarding the traveling or any suggestion then please do not hesitate to contact me. I will be happy to help you. I am always available for you.`,
+    aosDelay: '0',
   },
 ];
+
+const testimonialConfig = {
+  header: 'Thought & Promise Of Owner',
+  description: `Hello, I'm Vishal. At Shriram Tour & Travellers, we specialize in premium travel solutions. From luxurious travel cards for seamless journeys to bespoke wedding bookings and curated tours, we elevate your travel experience with luxury and comfort in mind.`,
+};
+
 const Testimonial = () => {
   return (
     <>
@@ -32,32 +29,34 @@ const Testimonial = () => {
               data-aos="fade-up"
               className="text-3xl font-semibold text-center sm:text-4xl font-serif"
             >
-              What Our Clients Say About Us
+              {testimonialConfig.header}
             </p>
-            <p data-aos="fade-up" className="text-center sm:px-44">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis iure consectetur tempora amet.
+            <p data-aos="fade-up" className="text-center sm:px-44 ">
+              {testimonialConfig.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-black dark:text-white">
+          <div className="gap-4 flex justify-center  text-black dark:text-white">
             {testimonialData.map((skill) => (
               <div
                 key={skill.name}
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
+                className="card max-w-[500px]  text-center group space-y-3 sm:space-y-6 p-4 sm:py-12 dark:bg-white/20 bg-gray-100 duration-300  rounded-lg "
               >
                 <div className="grid place-items-center ">
                   <img
-                    src="https://picsum.photos/200"
+                    src={skill.image}
                     alt=""
                     className="rounded-full w-20 h-20"
                   />
                 </div>
-                <div className="text-2xl">⭐⭐⭐⭐⭐</div>
+                {/* <div className="text-2xl">⭐⭐⭐⭐⭐</div> */}
                 <p>{skill.description}</p>
-                <p className="text-center font-semibold">{skill.name}</p>
+                <p>
+                  <p className="text-center text-sm">{skill.subtext}</p>
+                  <p className="text-center font-semibold">{skill.name}</p>
+                </p>
               </div>
             ))}
           </div>

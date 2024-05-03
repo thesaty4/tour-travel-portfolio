@@ -1,15 +1,16 @@
-import React from "react";
-import AppStoreImg from "../../assets/website/app_store.png";
-import PlayStoreImg from "../../assets/website/play_store.png";
-import pattern from "../../assets/website/pattern.jpeg";
+import React from 'react';
+import AppStoreImg from '../../assets/website/app_store.png';
+import PlayStoreImg from '../../assets/website/play_store.png';
+import pattern from '../../assets/website/pattern.jpeg';
+import { appStoreBanner } from '../constants/pages.const';
 
 const bannerImg = {
   backgroundImage: `url(${pattern})`,
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  height: "100%",
-  width: "100%",
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  height: '100%',
+  width: '100%',
 };
 const AppStoreBanner = () => {
   return (
@@ -24,28 +25,21 @@ const AppStoreBanner = () => {
               data-aos="fade-up"
               className="text-2xl text-center sm:text-4xl font-semibold font-serif"
             >
-              Get Started with our app
+              {appStoreBanner.label}
             </h1>
-            <p data-aos="fade-up" className="text-center sm:px-20">
+            {/* <p data-aos="fade-up" className="text-center sm:px-20">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
               magnam harum accusantium odit?
-            </p>
+            </p> */}
             <div
               data-aos="fade-up"
-              className="flex flex-wrap justify-center items-center gap-4"
+              className="flex flex-wrap justify-center items-center"
             >
               <a href="#">
                 <img
-                  src={PlayStoreImg}
+                  src={appStoreBanner.image}
                   alt=""
-                  className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
-                />
-              </a>
-              <a href="#">
-                <img
-                  src={AppStoreImg}
-                  alt=""
-                  className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+                  className="max-w-[150px] sm:max-w-[120px] md:max-w-[500px]"
                 />
               </a>
             </div>

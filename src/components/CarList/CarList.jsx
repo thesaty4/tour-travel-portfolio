@@ -1,29 +1,5 @@
-import React from "react";
-import whiteCar from "../../assets/white-car.png";
-import car2 from "../../assets/car5.png";
-import car3 from "../../assets/car6.png";
-import { carListConfig } from "../constants/pages.const";
-
-const carList = [
-  {
-    name: "BMW UX",
-    price: 100,
-    image: whiteCar,
-    aosDelay: "0",
-  },
-  {
-    name: "KIA UX",
-    price: 140,
-    image: car2,
-    aosDelay: "500",
-  },
-  {
-    name: "BMW UX",
-    price: 100,
-    image: car3,
-    aosDelay: "1000",
-  },
-];
+import { carListConfig } from '../constants/pages.const';
+import Tracker from '../shared/Tracker';
 
 const CarList = () => {
   return (
@@ -37,13 +13,14 @@ const CarList = () => {
           {carListConfig.heading.text}
         </h1>
         <p data-aos="fade-up" aos-delay="400" className="text-sm pb-10">
-        {carListConfig.heading.subText}
+          {carListConfig.heading.subText}
         </p>
         {/* Car listing */}
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16">
-            {carList.map((data) => (
+            {carListConfig.content.map((data, index) => (
               <div
+                key={index}
                 data-aos="fade-up"
                 data-aos-delay={data.aosDelay}
                 className="space-y-3 border-2 border-gray-300 hover:border-primary p-3 rounded-xl relative group"
@@ -58,13 +35,14 @@ const CarList = () => {
                 <div className="space-y-2">
                   <h1 className="text-primary font-semibold">{data.name}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
-                    <p>${data.price}/Day</p>
+                    <p>{data.price}</p>
                     <a href="#">Details</a>
                   </div>
                 </div>
-                <p className="text-xl font-semibold absolute top-0 left-3">
-                  12Km
-                </p>
+                <div className="flex justify-between">
+                  <Tracker tracks={data.track} />
+                  <Tracker tracks={data.track2} trackClass="bg-[green]" />
+                </div>
               </div>
             ))}
           </div>
