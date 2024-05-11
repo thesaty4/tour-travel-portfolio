@@ -1,5 +1,5 @@
 import React from 'react';
-import { contactConfig } from '../constants/pages.const';
+import { contactConfig, heroPageConfig } from '../constants/pages.const';
 
 const Contact = () => {
   return (
@@ -16,7 +16,7 @@ const Contact = () => {
             </div>
             <div className="sm:grid sm:place-items-center">
               <a
-                href="#"
+                href={`tel:${heroPageConfig.contact.mobile[0]}`}
                 className="inline-block font-semibold py-2 px-6 bg-primary text-white hover:bg-primary/80 duration-200 tracking-widest uppercase "
               >
                 Contact

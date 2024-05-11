@@ -1,10 +1,10 @@
 import bmw from '../../assets/bmw1.png';
-import { aboutConfig } from '../constants/pages.const';
+import { aboutConfig, heroPageConfig } from '../constants/pages.const';
 import Tracker from '../shared/Tracker';
 
 const About = () => {
   return (
-    <div className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
+    <div id='about' className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
           <div data-aos="slide-right" data-aos-duration="1500">
@@ -37,9 +37,10 @@ const About = () => {
                 labelClass="mt-[0px]"
               />
 
-              <button data-aos="fade-up" className="button-outline">
+              <p>
+              <a data-aos="fade-up" className="button-outline"   href={`tel:${heroPageConfig.contact?.mobile[0]}`}>
                 {aboutConfig.cta.label}
-              </button>
+              </a></p>
             </div>
           </div>
         </div>

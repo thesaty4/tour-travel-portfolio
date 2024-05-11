@@ -1,6 +1,7 @@
 import React from 'react';
 
 import VishalOwner from '../../assets/owner/vishal-cropped.jpg';
+import { heroPageConfig } from '../constants/pages.const';
 
 const testimonialData = [
   {
@@ -56,6 +57,9 @@ const Testimonial = () => {
                 <p>
                   <p className="text-center text-sm">{skill.subtext}</p>
                   <p className="text-center font-semibold">{skill.name}</p>
+                  <a className="text-center text-sm" href={`tel:${heroPageConfig.contact.mobile[0]}`}>
+                    {heroPageConfig.contact.mobile[0]}
+                  </a>
                 </p>
               </div>
             ))}

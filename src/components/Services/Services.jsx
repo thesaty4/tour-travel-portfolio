@@ -1,6 +1,7 @@
 import { FaCameraRetro } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
+import { heroPageConfig } from "../constants/pages.const";
 
 const skillsData = [
   {
@@ -33,8 +34,7 @@ const skillsData = [
 ];
 const Services = () => {
   return (
-    <>
-      <span id="about"></span>
+    <> 
       <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
@@ -56,10 +56,9 @@ const Services = () => {
                 <div className="grid place-items-center">{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
-                <a
-                  href={skill.link}
+                <a 
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
-                >
+                  href={`tel:${heroPageConfig.contact?.mobile[0]}`} >
                  Book Now
                 </a>
               </div>

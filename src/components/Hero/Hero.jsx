@@ -44,19 +44,18 @@ const Hero = ( ) => {
                 className="w-[30px] h-[30px]"
               /></span>
               <span> 
-                {heroPageConfig.contact?.mobile?.map((contact)=><p>{contact}</p>)}
+                {heroPageConfig.contact?.mobile?.map((contact,mKey)=><p key={mKey}>{contact}</p>)}
               </span>
             </p>
-            <button
+            <p>
+            <a
               data-aos="fade-up"
-              data-aos-delay="1500"
-              onClick={() => {
-                AOS.refreshHard();
-              }}
-              className="rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-10 text-black"
-            >
+              data-aos-delay="1500" 
+              className=" rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-10 text-black"
+              href={`tel:${heroPageConfig.contact?.mobile[0]}`}
+           > 
               {heroPageConfig.cta.label}
-            </button>
+            </a></p>
           </div>
         </div>
       </div>

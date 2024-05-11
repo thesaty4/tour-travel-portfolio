@@ -220,42 +220,46 @@ export const footerConfig = {
     description: 'Mehdawal Bypass Samrat Restaurant, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175',
     location: 'Khalilabad, Uttar Pradesh',
   },
-  right: [
-    {
-      label: 'Explore',
-      items: [
-        {
-          title: 'Home',
-          link: '/'
-        },
-        {
-          title: 'About',
-          link: '/about'
-        },
-        {
-          title: 'Services',
-          link: '/services'
-        }
-      ]
-    },
-    {
-      label: 'Contact',
-      items: [
-        {
-          title: 'Phone',
-          link: '/contact/phone'
-        },
-        {
-          title: 'Email',
-          link: '/contact/email'
-        },
-        {
-          title: 'Address',
-          link: '/contact/address'
-        }
-      ]
-    }
-  ]
+  right:{
+    label: 'We Are Available All Over India',
+    description: `Explore the diverse tapestry of India with Shri Ram Tour and Travels! Our journeys span the length and breadth of this enchanting land, offering you a kaleidoscope of experiences from the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from the bustling streets of Delhi to the tranquil backwaters of Kerala. Immerse yourself in the rich history, vibrant culture, and tantalizing cuisine that India has to offer, guided by our knowledgeable experts who ensure every moment is filled with wonder. Join us on an unforgettable adventure and let Shri Ram Tour and Travels be your gateway to the extraordinary beauty of India.`
+  }
+  // right: [
+  //   {
+  //     label: 'Explore',
+  //     items: [
+  //       {
+  //         title: 'Home',
+  //         link: '/'
+  //       },
+  //       {
+  //         title: 'About',
+  //         link: '/about'
+  //       },
+  //       {
+  //         title: 'Services',
+  //         link: '/services'
+  //       }
+  //     ]
+  //   },
+  //   {
+  //     label: 'Contact',
+  //     items: [
+  //       {
+  //         title: 'Phone',
+  //         link: '/contact/phone'
+  //       },
+  //       {
+  //         title: 'Email',
+  //         link: '/contact/email'
+  //       },
+  //       {
+  //         title: 'Address',
+  //         link: '/contact/address'
+  //       }
+  //     ]
+  //   }
+  // ]
 };
 import OwnerCard from "../../assets/owner/card.jpeg";
 export const appStoreBanner = {

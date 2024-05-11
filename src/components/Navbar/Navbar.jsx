@@ -13,7 +13,7 @@ export const Navlinks = [
   {
     id: 2,
     name: "CARS",
-    link: "/#cars",
+    link: "/#service",
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ export const Navlinks = [
   {
     id: 1,
     name: "BOOKING",
-    link: "/#booking",
+    link: "/#contact",
   },
 ];
 const Navbar = ({ theme, setTheme }) => {

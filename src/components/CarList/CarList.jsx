@@ -1,9 +1,9 @@
-import { carListConfig } from '../constants/pages.const';
+import { carListConfig, heroPageConfig } from '../constants/pages.const';
 import Tracker from '../shared/Tracker';
 
 const CarList = () => {
   return (
-    <div className="pb-24">
+    <div id='service' className="pb-24">
       <div className="container">
         {/* Heading */}
         <h1
@@ -36,7 +36,13 @@ const CarList = () => {
                   <h1 className="text-primary font-semibold">{data.name}</h1>
                   <div className="flex justify-between items-center text-xl font-semibold">
                     <p>{data.price}</p>
-                    <a href="#">Details</a>
+                    <p>
+            <a
+              className=" text-xs rounded-md bg-primary hover:bg-primary/80 transition duration-500 py-2 px-5 text-black"
+              href={`tel:${heroPageConfig.contact?.mobile[0]}`}
+           > 
+              Get Info
+            </a></p>
                   </div>
                 </div>
                 <div className="flex justify-between">
@@ -49,9 +55,9 @@ const CarList = () => {
         </div>
         {/* End of car listing */}
         <div className="grid place-items-center mt-8">
-          <button data-aos="fade-up" className="button-outline">
+          <a data-aos="fade-up" className="button-outline"   href={`tel:${heroPageConfig.contact?.mobile[0]}`}>
             Get Started
-          </button>
+          </a>
         </div>
       </div>
     </div>
