@@ -1,38 +1,37 @@
 import { FaCameraRetro } from "react-icons/fa";
 import { GiNotebook } from "react-icons/gi";
 import { SlNote } from "react-icons/sl";
-import { heroPageConfig } from "../constants/pages.const";
 
-const skillsData = [
+const skillsData = (t) => [
   {
-    name: "Best Price",
+    name: t("serviceConfig.skills.skill1.title"),
     icon: (
       <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
-    link: "#",
-    description: "Unbeatable prices, exceptional value, your budget-friendly choice for travel!",
+    link: t("serviceConfig.skills.skill1.link"),
+    description:  t("serviceConfig.skills.skill1.description"),
     aosDelay: "0",
   },
   {
-    name: "Fast and Safe",
+    name: t("serviceConfig.skills.skill2.title"),
     icon: (
       <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
-    link: "#",
-    description: "Quick and secure: Your safest and speediest travel solution!",
+    link: t("serviceConfig.skills.skill2.link"),
+    description:  t("serviceConfig.skills.skill2.description"),
     aosDelay: "500",
   },
   {
-    name: "24x7 Availability",
+    name: t("serviceConfig.skills.skill3.title"),
     icon: (
       <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
     ),
-    link: "#",
-    description: "We are available 24hrs, you can connect with us anytime.",
+    link: t("serviceConfig.skills.skill3.link"),
+    description:  t("serviceConfig.skills.skill3.description"),
     aosDelay: "1000",
   },
 ];
-const Services = () => {
+const Services = ({t}) => {
   return (
     <> 
       <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
@@ -42,11 +41,11 @@ const Services = () => {
               data-aos="fade-up"
               className="text-3xl font-semibold text-center sm:text-4xl font-serif"
             >
-              Why Choose Us
+              {t("serviceConfig.header")}
             </h1>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {skillsData.map((skill) => (
+            {skillsData(t).map((skill) => (
               <div
                 key={skill.name}
                 data-aos="fade-up"
@@ -58,8 +57,8 @@ const Services = () => {
                 <p>{skill.description}</p>
                 <a 
                   className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
-                  href={`tel:${heroPageConfig.contact?.mobile[0]}`} >
-                 Book Now
+                  href={`tel:${t('heroPageConfig.contact.mobile',{returnObject:true})[0]}`} >
+                  {t("serviceConfig.ctaText")}
                 </a>
               </div>
             ))}

@@ -1,0 +1,235 @@
+{
+  "siteInfo": {
+    "title": "माँ गायत्री",
+    "subTitle": "Tour & Travels",
+    "navLinks": [
+      {
+        "id": 1,
+        "name": "HOME",
+        "link": "/#"
+      },
+      {
+        "id": 2,
+        "name": "CARS",
+        "link": "/#service"
+      },
+      {
+        "id": 1,
+        "name": "ABOUT",
+        "link": "/#about"
+      },
+      {
+        "id": 1,
+        "name": "BOOKING",
+        "link": "/#contact"
+      }
+    ]
+  },
+  "heroPageConfig": {
+    "heading": {
+      "text": "माँ गायत्री",
+      "subText": "Tour & Travels"
+    },
+    "description": "Discover amazing places with our tours. We make trips just for you. See beautiful landscapes and learn about different cultures. Our tours are fun and relaxing. Join us for your next adventure!",
+    "contact": {
+      "mobile": ["+91 7652090620", "+91 8173934115"],
+      "email": []
+    },
+    "cta": {
+      "label": "Book Now"
+    }
+  },
+  "aboutConfig": {
+    "heading": {
+      "text": "About Us",
+      "subText": "Welcome to our world of adventure!"
+    },
+    "description": [
+      "We're passionate travelers just like you. Our mission is simple: to make your travel dreams come true. With us, you'll explore fascinating destinations, meet friendly locals, and create unforgettable memories. Let's embark on a journey together – your adventure starts here!"
+    ],
+    "trackerInfo": {
+      "title": "WE ALSO PROVIDE",
+      "tracker": [
+        { "label": "One Way" },
+        { "label": "Round Trip" },
+        { "label": "Tour Package" }
+      ]
+    },
+    "cta": {
+      "icon": "",
+      "label": "Get Started Journey"
+    }
+  },
+  "serviceConfig": {
+    "header": " Why Choose Us ?",
+    "ctaText": "Book Now",
+    "skills": {
+      "skill1": {
+        "title": "Best Price",
+        "link": "#",
+        "description": "Unbeatable prices, exceptional value, your budget-friendly choice for travel!"
+      },
+      "skill2": {
+        "title": "Fast and Safe",
+        "link": "#",
+        "description": "Quick and secure: Your safest and speediest travel solution!"
+      },
+      "skill3": {
+        "title": "24x7 Availability",
+        "link": "#",
+        "description": "We are available 24hrs, you can connect with us anytime."
+      }
+    }
+  },
+  "carListConfig": {
+    "heading": {
+      "text": "Vehicle & Services",
+      "subText": "We are offering these vehicles to ensure the best experience for your journey."
+    },
+    "content": [
+      {
+        "name": "Swift Dezire",
+        "price": "₹13/KM",
+        "image": "dezire",
+        "aosDelay": "0",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      },
+      {
+        "name": "Ertiga",
+        "price": "₹16/KM",
+        "image": "ertiga",
+        "aosDelay": "500",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      },
+      {
+        "name": "Innova",
+        "price": "₹18/KM",
+        "image": "inova",
+        "aosDelay": "1000",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      },
+      {
+        "name": "Verna",
+        "price": "₹18/KM",
+        "image": "verna",
+        "aosDelay": "1500",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      },
+      {
+        "name": "Traveler",
+        "price": "₹35/KM",
+        "image": "traveller",
+        "aosDelay": "2000",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      },
+      {
+        "name": "Aura",
+        "price": "₹13/KM",
+        "image": "aura",
+        "aosDelay": "2500",
+        "track": [
+          { "label": "Gorkhpur" },
+          { "label": "Khalilabad" },
+          { "label": "Lucknow" }
+        ],
+        "track2": [
+          { "label": "Mumbai" },
+          { "label": "Hyderabad" },
+          { "label": "All India" }
+        ]
+      }
+    ],
+    "cta": {
+      "contentCTA": "Get Info",
+      "footerCTA": "Get Started Journey"
+    }
+  },
+  "testimonialConfig": {
+    "header": "Thought & Promise Of Owner",
+    "description": "Hello, I'm Deep. At Gayatri Trips, we specialize in premium travel solutions. From luxurious travel cards for seamless journeys to bespoke wedding bookings and curated tours, we elevate your travel experience with luxury and comfort in mind.",
+    "testimonials": [
+        {
+            "name": "Shri. Hari Ram Mishra",
+            "subtext": "- Owner",
+            "image": "owner1",
+            "description": "I strive to deliver exceptional services to my customers. Your needs are always a priority for me. If you have any questions or feedback regarding your travel, don’t hesitate to reach out. I’m here to assist and guide you. Your comfort and satisfaction are my commitment, and I’m always at your service.",
+            "aosDelay": "0"
+        },          
+      {
+        "name": "Deep Mishra",
+        "subtext": "- Owner",
+        "image": "owner2",
+        "description": "I am trying to provide the best services to my customers. I am always available for them. If you have any concern regarding the traveling or any suggestion then please do not hesitate to contact me. I will be happy to help you. I am always available for you.",
+        "aosDelay": "0"
+      }
+    ]
+  },
+  "footerConfig": {
+    "left": {
+      "label": "Car Booking",
+      "description": "Manjhariya, Dhamaicha, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175",
+      "location": "Khalilabad, Uttar Pradesh"
+    },
+    "right": {
+      "label": "We Are Available All Over India",
+      "description": "Explore the diverse tapestry of India with Gayatri Trips! Our journeys span the length and breadth of this enchanting land, offering you a kaleidoscope of experiences from the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from the bustling streets of Delhi to the tranquil backwaters of Kerala. Immerse yourself in the rich history, vibrant culture, and tantalizing cuisine that India has to offer, guided by our knowledgeable experts who ensure every moment is filled with wonder. Join us on an unforgettable adventure and let Gayatri Trips be your gateway to the extraordinary beauty of India."
+    }
+  },
+  "appStoreBanner": {
+    "label": "Give the chance to us to provide you the best service",
+    "image": "OwnerCard"
+  },
+  "contactConfig": {
+    "label": "Get 30% OFF ONE WAY TRIP, BOOK NOW",
+    "description": "Book your one-way trip now and get 30% off on your booking.",
+    "cta": {
+      "label": "Contact Us",
+      "link": "/contact"
+    }
+  }
+}

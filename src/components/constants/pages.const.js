@@ -1,18 +1,15 @@
-import whiteCar from '../../assets/white-car.png';
-import car2 from '../../assets/car5.png';
-import car3 from '../../assets/car6.png';
 
 
 export const heroPageConfig = {
   heading: {
-    text: ' श्री राम',
+    text: ' माँ गायत्री',
     subText: 'Tour & Travels ',
   },
   description: `Discover amazing places with our tours. We make trips just for you. 
     See beautiful landscapes and learn about different cultures. 
     Our tours are fun and relaxing. Join us for your next adventure!`,
   contact: {
-    mobile: ['+91 8423004997', '+91 9235297778'],
+    mobile: ['+91 7652090620', '+91 8173934115'],
     email: [],
   },
   cta: {
@@ -48,12 +45,13 @@ export const aboutConfig = {
   },
 };
 
+import aura from '../../assets/aura-no-bg.png';
 import dezire from '../../assets/dezire.png';
 import ertiga from '../../assets/ertiga-new.png';
 import inova from '../../assets/inova.png';
-import verna from '../../assets/verna.png';
+import OwnerCard from "../../assets/owner/card.jpeg";
 import traveller from '../../assets/traveller.png';
-import aura from '../../assets/aura-no-bg.png';
+import verna from '../../assets/verna.png';
 
 export const carListConfig = {
   heading: {
@@ -217,12 +215,12 @@ export const carListConfig = {
 export const footerConfig = {
   left: {
     label: 'Car Booking',
-    description: 'Mehdawal Bypass Samrat Restaurant, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175',
+    description: 'Manjhariya, Dhamaicha, Khalilabad, Sant Kabir Nagar, Uttar Pradesh 272175',
     location: 'Khalilabad, Uttar Pradesh',
   },
   right:{
     label: 'We Are Available All Over India',
-    description: `Explore the diverse tapestry of India with Shri Ram Tour and Travels! Our journeys span the length and breadth of this enchanting land, offering you a kaleidoscope of experiences from the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from the bustling streets of Delhi to the tranquil backwaters of Kerala. Immerse yourself in the rich history, vibrant culture, and tantalizing cuisine that India has to offer, guided by our knowledgeable experts who ensure every moment is filled with wonder. Join us on an unforgettable adventure and let Shri Ram Tour and Travels be your gateway to the extraordinary beauty of India.`
+    description: `Explore the diverse tapestry of India with Gayatri Trips! Our journeys span the length and breadth of this enchanting land, offering you a kaleidoscope of experiences from the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from the bustling streets of Delhi to the tranquil backwaters of Kerala. Immerse yourself in the rich history, vibrant culture, and tantalizing cuisine that India has to offer, guided by our knowledgeable experts who ensure every moment is filled with wonder. Join us on an unforgettable adventure and let Gayatri Trips be your gateway to the extraordinary beauty of India.`
   }
   // right: [
   //   {
@@ -261,7 +259,6 @@ export const footerConfig = {
   //   }
   // ]
 };
-import OwnerCard from "../../assets/owner/card.jpeg";
 export const appStoreBanner = {
   label: `Give the chance to us to provide you the best service`,
   image: OwnerCard
