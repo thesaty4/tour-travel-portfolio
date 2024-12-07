@@ -1,13 +1,13 @@
 import React from 'react';
 
-import VishalOwner from '../../assets/owner/vishal-cropped.jpg';
+import OwnerImage from '../../assets/owner/owner-cropped.jpeg';
 import { heroPageConfig } from '../constants/pages.const';
 
 const testimonialData = [
   {
-    name: 'Vishal Maurya',
+    name: 'Deep Mishra',
     subtext: '- Owner',
-    image: VishalOwner,
+    image: OwnerImage,
     description: `I am trying to provide the best services to my customers. I am always available for them. If you have any concern regarding the traveling or any suggestion then please do not hesitate to contact me. I will be happy to help you. I am always available for you.`,
     aosDelay: '0',
   },
@@ -15,7 +15,7 @@ const testimonialData = [
 
 const testimonialConfig = {
   header: 'Thought & Promise Of Owner',
-  description: `Hello, I'm Vishal. At Shriram Tour & Travellers, we specialize in premium travel solutions. From luxurious travel cards for seamless journeys to bespoke wedding bookings and curated tours, we elevate your travel experience with luxury and comfort in mind.`,
+  description: `Hello, I'm Deep. At Gayatri Trips, we specialize in premium travel solutions. From luxurious travel cards for seamless journeys to bespoke wedding bookings and curated tours, we elevate your travel experience with luxury and comfort in mind.`,
 };
 
 const Testimonial = () => {

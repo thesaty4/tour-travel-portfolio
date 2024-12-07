@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
-import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
-import ResponsiveMenu from "./ResponsiveMenu"; 
+import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import ShriRamIcon from "../../assets/icons/shri-ram-logo.png";
+import ResponsiveMenu from "./ResponsiveMenu";
 
 export const Navlinks = [
   {
@@ -42,7 +42,7 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-2" style={{zoom:0.7}}>
             <span className="w-[60px] h-[60px]"><img src={ShriRamIcon}/></span> 
             <span className="font-bold font-serif ">
-              <div className="text-3xl">श्री राम</div>
+              <div className="text-3xl">माँ गायत्री</div>
               <div className="text-xs">Tour & Travel</div>
             </span>
           </div>
