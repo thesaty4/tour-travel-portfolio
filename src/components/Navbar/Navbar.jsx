@@ -3,30 +3,8 @@ import { BiSolidMoon, BiSolidSun } from "react-icons/bi";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
 import ShriRamIcon from "../../assets/icons/shri-ram-logo.png";
 import ResponsiveMenu from "./ResponsiveMenu";
-
-export const Navlinks = [
-  {
-    id: 1,
-    name: "HOME",
-    link: "/#",
-  },
-  {
-    id: 2,
-    name: "CARS",
-    link: "/#service",
-  },
-  {
-    id: 1,
-    name: "ABOUT",
-    link: "/#about",
-  },
-  {
-    id: 1,
-    name: "BOOKING",
-    link: "/#contact",
-  },
-];
-const Navbar = ({ theme, setTheme }) => {
+ 
+const Navbar = ({ theme, setTheme, t }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -42,13 +20,13 @@ const Navbar = ({ theme, setTheme }) => {
           <div className="flex items-center gap-2" style={{zoom:0.7}}>
             <span className="w-[60px] h-[60px]"><img src={ShriRamIcon}/></span> 
             <span className="font-bold font-serif ">
-              <div className="text-3xl">माँ गायत्री</div>
-              <div className="text-xs">Tour & Travel</div>
+              <div className="text-3xl">{t('siteInfo.title')}</div>
+              <div className="text-xs">{t('siteInfo.subTitle')}</div>
             </span>
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">
-              {Navlinks.map(({ id, name, link }) => (
+              {t('siteInfo.navLinks',{returnObjects:true}).map(({ id, name, link }) => (
                 <li key={id} className="py-4">
                   <a
                     href={link}
@@ -103,7 +81,7 @@ const Navbar = ({ theme, setTheme }) => {
           </div>
         </div>
       </div>
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu showMenu={showMenu} t={t} />
     </div>
   );
 };

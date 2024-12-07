@@ -1,8 +1,7 @@
 import bmw from '../../assets/bmw1.png';
-import { aboutConfig, heroPageConfig } from '../constants/pages.const';
 import Tracker from '../shared/Tracker';
 
-const About = () => {
+const About = ({t}) => {
   return (
     <div id='about' className="dark:bg-dark bg-slate-100 sm:min-h-[600px] sm:grid sm:place-items-center duration-300">
       <div className="container">
@@ -20,26 +19,26 @@ const About = () => {
                 data-aos="fade-up"
                 className="text-3xl sm:text-4xl font-bold font-serif"
               >
-                {aboutConfig.heading.text}
+                {t('aboutConfig.heading.text')}
               </h1>
               <p data-aos="fade-up" className="leading-8 tracking-wide">
-                {aboutConfig.heading.subText}
+                {t('aboutConfig.heading.subText')}
               </p>
-              {aboutConfig.description.map((item, aKey) => (
+              {t('aboutConfig.description',{ returnObjects: true }).map((item, aKey) => (
                 <p key={aKey} data-aos="fade-up">
                   {item}
                 </p>
               ))}
               <Tracker
-                tracks={aboutConfig.tracker}
-                label={'WE ALSO PROVIDE'}
+                tracks={t('aboutConfig.trackerInfo.tracker',{ returnObjects: true })}
+                label={t('aboutConfig.trackerInfo.title')}
                 trackClass="bg-[green] w-5 h-5"
                 labelClass="mt-[0px]"
               />
 
               <p>
-              <a data-aos="fade-up" className="button-outline"   href={`tel:${heroPageConfig.contact?.mobile[0]}`}>
-                {aboutConfig.cta.label}
+              <a data-aos="fade-up" className="button-outline"   href={`tel:${t('heroPageConfig.contact?.mobile',{returnObjects: true})[0]}`}>
+                {t('aboutConfig.cta.label')}
               </a></p>
             </div>
           </div>

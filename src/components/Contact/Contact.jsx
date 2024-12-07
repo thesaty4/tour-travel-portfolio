@@ -1,7 +1,6 @@
 import React from 'react';
-import { contactConfig, heroPageConfig } from '../constants/pages.const';
 
-const Contact = () => {
+const Contact = ({t}) => {
   return (
     <>
       <span id="contact"></span>
@@ -10,16 +9,16 @@ const Contact = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 bg-gray-800 py-8 px-6">
             <div className="col-span-2 space-y-3">
               <h1 className="text-4xl sm:text-5xl font-bold text-white">
-                {contactConfig.label}
+                {t('contactConfig.label')}
               </h1>
-              <p className="text-gray-400">{contactConfig.description}</p>
+              <p className="text-gray-400">{t('contactConfig.description')}</p>
             </div>
             <div className="sm:grid sm:place-items-center">
               <a
-                href={`tel:${heroPageConfig.contact.mobile[0]}`}
+                href={`tel:${t('heroPageConfig.contact.mobile',{ returnObjects:true })[0]}`}
                 className="inline-block font-semibold py-2 px-6 bg-primary text-white hover:bg-primary/80 duration-200 tracking-widest uppercase "
               >
-                Contact
+                {t('contactConfig.cta.label')}
               </a>
             </div>
           </div>

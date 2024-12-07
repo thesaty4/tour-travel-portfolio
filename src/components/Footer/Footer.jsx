@@ -1,12 +1,11 @@
 import React from 'react';
 import {
-  FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaLocationArrow,
   FaMobileAlt,
+  FaYoutube
 } from 'react-icons/fa';
-import { footerConfig, heroPageConfig } from '../constants/pages.const';
 
 const FooterLinks = [
   {
@@ -27,7 +26,7 @@ const FooterLinks = [
   },
 ];
 
-const Footer = () => {
+const Footer = ({t}) => {
   return (
     <div className="bg-gray-100 dark:bg-dark mt-14 rounded-t-3xl">
       <section className="container">
@@ -35,16 +34,16 @@ const Footer = () => {
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
-              {footerConfig.left.label}
+              {t('footerConfig.left.label')}
             </h1>
-            <p className="text-sm">{footerConfig.left.description}</p>
+            <p className="text-sm">{t('footerConfig.left.description')}</p>
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
-              <p>{footerConfig.left.location}</p>
+              <p>{t('footerConfig.left.location')}</p>
             </div>
 
-            {heroPageConfig.contact.mobile?.map((mobile, mKey) => (
+            {t('heroPageConfig.contact.mobile',{returnObjects:true})?.map((mobile, mKey) => (
               <>
                 <div key={mKey} className="flex items-center gap-3 mt-3">
                   <FaMobileAlt />
@@ -55,13 +54,13 @@ const Footer = () => {
 
             {/* Social Handle */}
             <div className="flex items-center gap-3 mt-6">
-              <a href="#">
+              <a href="https://www.instagram.com/deep_mishra_5633/">
                 <FaInstagram className="text-3xl hover:text-primary duration-300" />
               </a>
-              <a href="#">
-                <FaFacebook className="text-3xl hover:text-primary duration-300" />
+              <a href="https://www.instagram.com/codevzone">
+                <FaYoutube className="text-3xl hover:text-primary duration-300" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/thesaty4/">
                 <FaLinkedin className="text-3xl hover:text-primary duration-300" />
               </a>
             </div>
@@ -69,9 +68,9 @@ const Footer = () => {
           {/* Links */}
           <div className=" ">
           <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                 {footerConfig.right.label}
+                 {t('footerConfig.right.label')}
                 </h1>
-              <div> {footerConfig.right.description}</div></div>
+              <div> {t('footerConfig.right.description')}</div></div>
           {/* <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10 ">
             <div className="">
               <div className="py-8 px-4 ">

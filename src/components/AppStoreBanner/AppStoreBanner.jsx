@@ -1,8 +1,6 @@
 import React from 'react';
-import AppStoreImg from '../../assets/website/app_store.png';
-import PlayStoreImg from '../../assets/website/play_store.png';
+import OwnerCard from "../../assets/owner/card.jpeg";
 import pattern from '../../assets/website/pattern.jpeg';
-import { appStoreBanner } from '../constants/pages.const';
 
 const bannerImg = {
   backgroundImage: `url(${pattern})`,
@@ -12,7 +10,10 @@ const bannerImg = {
   height: '100%',
   width: '100%',
 };
-const AppStoreBanner = () => {
+const AppStoreBanner = ({t}) => {
+  const bannerMapping = {
+    OwnerCard
+  }
   return (
     <div className="container">
       <div
@@ -25,19 +26,15 @@ const AppStoreBanner = () => {
               data-aos="fade-up"
               className="text-2xl text-center sm:text-4xl font-semibold font-serif"
             >
-              {appStoreBanner.label}
+              {t('appStoreBanner.label')}
             </h1>
-            {/* <p data-aos="fade-up" className="text-center sm:px-20">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              magnam harum accusantium odit?
-            </p> */}
             <div
               data-aos="fade-up"
               className="flex flex-wrap justify-center items-center"
             >
               <a href="#">
                 <img
-                  src={appStoreBanner.image}
+                  src={bannerMapping[t('appStoreBanner.image')]}
                   alt=""
                   className="max-w-[150px] sm:max-w-[120px] md:max-w-[500px]"
                 />
