@@ -198,14 +198,16 @@
             "subtext": "- Owner",
             "image": "owner1",
             "description": "I strive to deliver exceptional services to my customers. Your needs are always a priority for me. If you have any questions or feedback regarding your travel, don’t hesitate to reach out. I’m here to assist and guide you. Your comfort and satisfaction are my commitment, and I’m always at your service.",
-            "aosDelay": "0"
+            "aosDelay": "0",
+            "contact": "+91 8173934115"
         },          
       {
         "name": "Deep Mishra",
         "subtext": "- Owner",
         "image": "owner2",
         "description": "I am trying to provide the best services to my customers. I am always available for them. If you have any concern regarding the traveling or any suggestion then please do not hesitate to contact me. I will be happy to help you. I am always available for you.",
-        "aosDelay": "0"
+        "aosDelay": "0",
+        "contact": "+91 7652090620"
       }
     ]
   },

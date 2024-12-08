@@ -53,16 +53,11 @@ const Testimonial = ({ t }) => {
                   {/* Mobile number link */}
                   <a
                     className="text-sm text-blue-500"
-                    href={`tel:${
-                      t("heroPageConfig.contact.mobile", {
-                        returnObjects: true,
-                      })[0]
+                    href={`tel:${testimonial.contact}}
                     }`}
                   >
                     {
-                      t("heroPageConfig.contact.mobile", {
-                        returnObjects: true,
-                      })[0]
+                       testimonial.contact
                     }
                   </a>
                 </div>
