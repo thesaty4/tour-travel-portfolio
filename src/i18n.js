@@ -8,7 +8,8 @@ i18n
   .use(LanguageDetector) // Detects the user's language
   .use(initReactI18next) // Passes i18n to React
   .init({
-    fallbackLng: 'hi', // Fallback language
+    lng: 'hi', // Set Hindi as the default language
+    fallbackLng: 'hi', // Fallback language in case the detected language isn't available
     // debug: true,       // Enable debugging during development
     interpolation: {
       escapeValue: false, // React already escapes content
